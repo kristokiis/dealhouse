@@ -1,0 +1,580 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+
+	margin: 0;
+
+	font-family: 'Arial', Verdana;
+    font-size: 1em;
+    line-height: 1.4;
+	color: #fff;
+
+	
+	background-color: #000;
+	/*background-image: url(../img/bg_phone.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size: contain;*/
+}
+
+
+a {
+	outline: none;
+
+	-webkit-transition: all 0.30s;
+	-moz-transition: all 0.30s;
+	-o-transition: all 0.30s;
+	transition: all 0.30s;
+	color: white;
+}
+
+a:hover{
+	color: #068038 !important;
+}
+
+a:focus{
+	outline: none;
+
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+.clear {
+	clear: both;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.ajax-loader {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#topBar {
+	background-color: rgba(0,0,0,0.45);
+	padding-bottom: 20px;
+	padding-top: 20px;
+	letter-spacing: 1px;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	height: 40px;
+}
+
+#menuContent {
+	-webkit-transition: all 0.20s;
+	-moz-transition: all 0.20s;
+	transition: all 0.20s;
+	opacity: 0.05;
+	top: 80px;
+	left: 30px;
+	position: fixed;
+	z-index: -1;
+}
+
+#menuContent h2 {
+	margin: 0;
+}
+
+#menuContent ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#menuContent ul li {
+	font-size: 18px;
+	line-height: 35px;
+}
+
+#menuContent a {
+	text-decoration: none;
+	display: inline-block;
+	min-width: 210px;
+}
+
+#menuContent ul li span {
+	height: 35px;
+	width: 50px;
+	display: inline-block;
+	background: url(../img/icons.png);
+}
+#menuContent ul a.active span, #menuContent ul a:hover span {
+	background: url(../img/icons-active.png);
+}
+#menuContent ul li strong {
+	padding-top: 10px;
+	float: right;
+	
+}
+
+
+.beauty span {
+	background-position-x: -76px !important;
+} 
+.food span {
+	background-position-x: -168px !important;
+} 
+.hotel span {
+	background-position-x: -278px !important;
+} 
+.car span {
+	background-position-x: -374px !important;
+} 
+.entertainment span {
+	background-position-x: -482px !important;
+} 
+.product span {
+	background-position-x: -598px !important;
+} 
+.other span {
+	background-position-x: -678px !important;
+} 
+
+
+
+
+
+#menuContent.active {
+	opacity: 1;
+}
+#pageWrap{
+	-webkit-transition: all 0.20s;
+	-moz-transition: all 0.20s;
+	transition: all 0.20s;
+	/*display: none;*/
+	width: 966px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 80px;
+}
+#pageWrap.active {
+	-webkit-transform: translateZ(0);
+	-webkit-transform: translate3d(80%, 0, 0);
+}
+.top-form {
+	text-align: center;
+}
+.join-text {
+	font-style: italic;
+	margin-right: 53px;
+	
+}
+input[type="text"] {
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	width: 275px;
+	height: 40px;
+	padding-left: 15px;
+	font-size: 16px;
+}
+input[type="submit"] {
+	color: white;
+	font-style: italic;
+	border: 0;
+	height: 45px !important;
+	margin-left: 0;
+	width: 110px;
+	background-color: #068038;
+	cursor: pointer;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-transition: all 0.30s;
+	-moz-transition: all 0.30s;
+	-o-transition: all 0.30s;
+	transition: all 0.30s;
+	font-size: 16px;
+	
+}
+input[type="submit"]:hover {
+	
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(20, 118, 46, .75);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(20, 118, 46, .75);
+	box-shadow: 0px 0px 15px 5px rgba(20, 118, 46, .75);
+}
+
+.mail-image {
+	top: 0;
+	background: url(../img/mail.png);
+	width: 200px;
+	height: 68px;
+	position: absolute;
+	z-index: 0;
+	left: 70%;
+}
+header {
+	
+}
+h1 {
+	height: 45px;
+	width: 245px;
+	text-indent: -999em;
+	float: left;
+	background: url(../img/logo2.png);
+	text-indent: -9999;
+}
+
+.menu-trigger {
+	float: left;
+	display: inline-block;
+	margin-top: -10px;
+	height: 60px;
+	width: 60px;
+	background: url(../img/menu.png);
+}
+
+.social {
+	float: right;
+	margin-top: 50px;
+}
+.social a {
+	float: right;
+	padding-top: 4px;
+	font-size: 12px;
+}
+.social a:before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 4px 0px 0px;
+	background: url(../img/facebook_icon.png);
+}
+nav {
+	margin-top:50px;
+}
+
+nav.fixed {
+	position: fixed;
+	top: -50px;
+	z-index: 3;
+	padding-top: 0px;
+	height: 65px;
+	background-color: rgba(0,0,0,0.75);
+	left: 0;
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 auto;
+	width: 712px;
+	display: block;
+}
+nav ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+nav ul a {
+	text-align: center;
+	padding-top: 40px;
+	display: block;
+	background: url(../img/icons.png);
+	background-repeat: no-repeat;
+	text-decoration: none;
+}
+
+nav ul a:hover {
+	background: url(../img/icons-active.png);
+	background-repeat: no-repeat;
+}
+
+.cat-all {
+	background-position: 0px 0px;
+}
+.cat-beauty, .cat-beauty:hover {
+	background-position: -80px 0px;
+}
+.cat-food, .cat-food:hover {
+	background-position: -135px 0px;
+}
+.cat-hotel, .cat-hotel:hover {
+	background-position: -250px 0px;
+}
+.cat-car, .cat-car:hover {
+	background-position: -373px 0px;
+}
+.cat-entertainment, .cat-entertainment:hover {
+	background-position: -440px 0px;
+}
+.cat-products, .cat-products:hover {
+	background-position: -590px 0px;
+}
+.cat-others, .cat-others:hover {
+	width: 44px;
+	background-position: -683px 0px;
+}
+
+#offersList {
+	margin: 0 auto;
+	height: 730px;
+}
+
+.box-element {
+	position: relative;
+	border-radius: 5px;
+	height: 265px;
+	/*opacity: 0.5;*/
+	background-color: white;
+	width: 294px;
+	color: #adadad;
+	font-size: 12px;
+	float: left;
+	margin-right: 38px;
+	margin-bottom: 38px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.box-element.last {
+	margin-right: 0;
+}
+.box-element p {
+	color: #adadad;
+}
+.box-element a {
+	color: #c1c1c1;
+	
+	
+}
+.box-element a:before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 4px 0px 0px;
+	background: url(../img/web-ico.png);
+}
+.box-element .like {
+	background: url(../img/heart-ico.png);
+	left: 10px;
+	top: 10px;
+	height: 23px;
+	width: 23px;
+	text-indent: -99em;
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+}
+.like:hover {
+	top: 7px;
+	left: 6px;
+	width: 29px;
+	height: 29px;
+	background: url(../img/heart-active.png);
+}
+.like.active {
+	background: url(../img/heart-active.png);
+}
+.mask {
+	z-index: 1;
+	box-shadow: 2px 2px 80px 15px black inset;
+	height: 173px;
+	width: 294px;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+.box-element img {
+	border-top-radius: 4px;
+	box-shadow: 1px -1px 10px #191919;
+	height: 173px;
+	/*box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);*/
+}
+.sale-percent {
+	position: absolute;
+	font-size: 21px;
+	color: black;
+	top: 90px;
+	right: 12px;
+	color: white;
+	line-height: 72px;
+	width: 72px;
+	height: 72px;
+	text-align: center;
+	z-index: 2;
+}
+.sale-percent.green {
+	background: url(../img/badge-green.png);
+}
+.sale-percent.yellow {
+	background: url(../img/badge-yellow.png);
+	color: #758a8a;
+}
+
+.sale-percent.red {
+	background: url(../img/badge-red.png);
+}
+
+.offer-description {
+	height: 48px;
+	/*width: 210px;*/
+}
+
+.new-price {
+	color: #c85454;
+	font-weight: bold;
+	margin-right: 10px;
+	margin-top: -10px;
+	float: right;
+	font-size: 20px;
+}
+
+.old-price {
+	color: #758a8a;
+	text-decoration:line-through;
+	float: right;
+	margin-top: -2px;
+	margin-right: 10px;
+}
+
+.old-price:after {
+	clear: both;
+}
+
+.box-content {
+	padding-left: 10px;
+}
+footer {
+	margin-top: 23px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+footer .statistics {
+	float: right;
+}
+.statistics span {
+	color: red;
+}
+
+hr {
+	clear: both;
+}
+
+@media screen and (max-width: 966px) and (min-width: 630px) {
+	#pageWrap {
+		width: 630px;
+	}
+	
+	#offersList {
+		width: 630px;
+	}
+}
+
+
+@media screen and (max-width: 630px) {
+	.mail-image {
+		display: none;
+	}
+	.logo {
+		float: none;
+		margin: 0 auto;
+	}
+	#topBar {
+		width: 100%;
+		overflow: hidden;
+	}
+	#pageWrap {
+		width: 320px;
+		overflow: hidden;
+	}
+	.join-text {
+		display: none;
+	}
+	input[type="text"] {
+		width: 100px;
+	}
+	#offersList {
+		width: 294px;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+}
